@@ -1,0 +1,52 @@
+AddKeysToAgent confirm
+
+Host octopi
+	Hostname octopi
+	User pi
+Host da
+	Hostname da-dev.us
+	User desu
+Host publicmarket
+	Hostname ec2-54-91-101-231.compute-1.amazonaws.com
+Host dev1
+	User ec2-user
+	Hostname ec2-34-195-152-253.compute-1.amazonaws.com
+	#    IdentityFile ~/.ssh/dev1.pem
+	ForwardAgent yes
+Host dev-misc
+	User ec2-user
+	Hostname 35.153.182.75
+	#    IdentityFile ~/.ssh/dev-misc.pem 
+	ForwardAgent yes
+Host etap
+	User ec2-user
+	Hostname ec2-34-202-205-187.compute-1.amazonaws.com
+	#IdentityFile ~/.ssh/dev-misc.pem
+	ForwardAgent yes
+Host boc
+	User ubuntu
+	Hostname ec2-54-167-168-225.compute-1.amazonaws.com
+Host nelbud-misc
+	User ec2-user
+	Hostname ec2-52-7-63-49.compute-1.amazonaws.com
+	#    IdentityFile ~/.ssh/dev-misc.pem
+Host cron2
+	User ubuntu
+	Hostname 3.93.172.243
+Host nelbud-scheduler
+	User ubuntu
+	Hostname ec2-54-82-194-191.compute-1.amazonaws.com
+Host nelbud-test
+	user ubuntu
+	Hostname 3.80.53.235
+Host danaco
+	User ec2-user
+	Hostname 52.27.125.113
+Host workflows-dev
+	User david
+	Port 9922
+	HostName dev.workflows.dataautomation.com
+Host workflows-prod
+	User david
+	Port 9922
+	HostName workflows.dataautomation.com
