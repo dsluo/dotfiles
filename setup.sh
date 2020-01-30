@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 declare -A configs=(
-    ["vimrc"]         =".vimrc"
-    ["ssh_config"]    =".ssh/config"
-    ["bashrc"]        =".bashrc"
+    ["vimrc"]=".vimrc"
+    ["ssh_config"]=".ssh/config"
+    ["bashrc"]=".bashrc"
 )
 
 for config in "${!configs[@]}"
