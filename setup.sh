@@ -4,6 +4,7 @@ declare -A configs=(
     ["vimrc"]=".vimrc"
     ["ssh_config"]=".ssh/config"
     ["bashrc"]=".bashrc"
+    ["bash_profile"]=".bash_profile"
 )
 
 for config in "${!configs[@]}"
