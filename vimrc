@@ -13,7 +13,9 @@ set number
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$/
-
+" highlight current line
+set cursorline
+set hlsearch
 
 " Behavior
 set mouse=a
