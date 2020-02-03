@@ -19,5 +19,7 @@ alias la="ls -a"
 
 # environment
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH=$PATH:$HOME/.local/bin
+export PATH="$PATH:$HOME/.local/bin"
 
+export EDITOR=vim
+export VISUAL=vim
