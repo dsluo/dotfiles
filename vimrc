@@ -33,6 +33,10 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+" for json, use 2 spaces instead of 4
+autocmd BufRead,BufNewFile *.json setlocal tabstop=2
+autocmd BufRead,BufNewFile *.json setlocal shiftwidth=2
+
 " Plugins
 " autoinstall vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
