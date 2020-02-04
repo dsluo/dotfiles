@@ -51,5 +51,12 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'metakirby5/codi.vim'
+Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call plug#end()
+
+" Powerline
+" use python3 for powerline
+let g:powerline_pycmd="py3"
+" always show status line
+set laststatus=2
