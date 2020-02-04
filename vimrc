@@ -37,7 +37,10 @@ set autoindent
 autocmd BufRead,BufNewFile *.json setlocal tabstop=2
 autocmd BufRead,BufNewFile *.json setlocal shiftwidth=2
 
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
 " Plugins
+
 " autoinstall vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
