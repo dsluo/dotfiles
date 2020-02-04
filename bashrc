@@ -23,3 +23,8 @@ export PATH="$PATH:$HOME/.local/bin"
 
 export EDITOR=vim
 export VISUAL=vim
+
+if [ -x "$(command -v xclip)" ]
+then
+    alias cb="xclip -selection clipboard"
+fi
