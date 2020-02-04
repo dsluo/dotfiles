@@ -5,6 +5,7 @@ declare -A configs=(
     ["ssh_config"]=".ssh/config"
     ["bashrc"]=".bashrc"
     ["bash_profile"]=".bash_profile"
+    ["gitconfig"]=".gitconfig"
 )
 
 for config in "${!configs[@]}"
