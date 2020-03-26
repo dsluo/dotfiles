@@ -50,3 +50,7 @@ Host workflows-prod
 	User david
 	Port 9922
 	HostName workflows.dataautomation.com
+Host pvx
+    User ubuntu
+    HostName 3.82.224.20
+	ForwardAgent yes
