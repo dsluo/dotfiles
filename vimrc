@@ -21,6 +21,10 @@ set hlsearch
 set mouse=a
 " enable auto-reload of saved files
 set autoread
+" folding
+set foldmethod=syntax
+" suggestions in status bar
+set wildmenu
 
 " Tabs
 " use spaces
@@ -60,3 +64,4 @@ call plug#end()
 let g:powerline_pycmd="py3"
 " always show status line
 set laststatus=2
+
