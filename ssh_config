@@ -1,14 +1,14 @@
 AddKeysToAgent confirm
 
 Host da
-	Hostname da-dev.us
-	User desu
+    Hostname da-dev.us
+    User desu
 Host dev1
-	User ec2-user
-	Hostname ec2-34-195-152-253.compute-1.amazonaws.com
+    User ec2-user
+    Hostname ec2-34-195-152-253.compute-1.amazonaws.com
 Host etap-db
-	User ec2-user
-	Hostname ec2-34-202-205-187.compute-1.amazonaws.com
+    User ec2-user
+    Hostname ec2-34-202-205-187.compute-1.amazonaws.com
 Host etap-prod
     User ubuntu
     Hostname 54.205.203.183
@@ -16,35 +16,35 @@ Host etap-staging
     User ubuntu
     Hostname 18.210.107.21
 Host boc
-	User ubuntu
-	Hostname ec2-54-167-168-225.compute-1.amazonaws.com
+    User ubuntu
+    Hostname ec2-54-167-168-225.compute-1.amazonaws.com
 Host nelbud-misc
-	User ec2-user
-	Hostname ec2-52-7-63-49.compute-1.amazonaws.com
+    User ec2-user
+    Hostname ec2-52-7-63-49.compute-1.amazonaws.com
 Host cron2
-	User ubuntu
-	Hostname 3.93.172.243
+    User ubuntu
+    Hostname 3.93.172.243
 Host nelbud-scheduler
-	User ubuntu
-	Hostname ec2-54-82-194-191.compute-1.amazonaws.com
+    User ubuntu
+    Hostname ec2-54-82-194-191.compute-1.amazonaws.com
 Host nelbud-test
-	user ubuntu
-	Hostname 3.80.53.235
+    User ubuntu
+    Hostname 3.80.53.235
 Host danaco
-	User ec2-user
-	Hostname 52.27.125.113
+    User ec2-user
+    Hostname 52.27.125.113
 Host workflows-dev
-	User david
-	Port 9922
-	HostName dev.workflows.dataautomation.com
+    User david
+    Port 9922
+    HostName dev.workflows.dataautomation.com
 Host workflows-prod
-	User david
-	Port 9922
-	HostName workflows.dataautomation.com
+    User david
+    Port 9922
+    HostName workflows.dataautomation.com
 Host globalteck
     User ec2-user
     HostName 35.153.182.75
 Host pvx
     User ubuntu
     HostName 3.82.224.20
-	ForwardAgent yes
+    ForwardAgent yes
