@@ -41,6 +41,8 @@ set autoindent
 autocmd BufRead,BufNewFile *.json setlocal tabstop=2
 autocmd BufRead,BufNewFile *.json setlocal shiftwidth=2
 
+" Custom commands
+" :W writes with sudo
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " Plugins
