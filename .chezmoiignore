@@ -1,0 +1,4 @@
+.pi/agent/sessions/**
+.pi/**/node_modules/**
+.pi/agent/mcp-cache.json
+.pi/agent/private_auth.json
