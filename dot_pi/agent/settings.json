@@ -4,10 +4,5 @@
   "defaultModel": "Qwen 3.6 35B A3B Code",
   "enableInstallTelemetry": false,
   "hideThinkingBlock": false,
-  "extensions": [
-    "-extensions/mcp-tools/index.ts"
-  ],
-  "packages": [
-    "npm:pi-mcp-adapter@2.4.0"
-  ]
+  "packages": ["npm:pi-mcp-adapter@2.4.0", "npm:@aliou/pi-guardrails@0.10.0"]
 }
