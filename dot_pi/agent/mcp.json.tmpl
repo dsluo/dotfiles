@@ -9,6 +9,15 @@
     },
     "microsoft-learn": {
       "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp",
+      "auth": "bearer",
+      "bearerToken": "{{ onepasswordRead "op://Private/GitHub/pat" }}",
+      "headers": {
+        "X-MCP-Toolsets": "actions,discussions,gists,git,issues,labels,orgs,projects,pull_requests,repos,security_advisories",
+        "X-MCP-Readonly": "true"
+      }
     }
   }
 }
