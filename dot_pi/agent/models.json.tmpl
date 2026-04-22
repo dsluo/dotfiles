@@ -1,5 +1,10 @@
 {
   "providers": {
+    "openrouter": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "api": "openai-completions",
+      "apiKey": "{{ onepasswordRead "op://Private/OpenRouter/key" }}"
+    },
     "llama.cpp": {
       "baseUrl": "{{ onepasswordRead "op://chezmoi/all/llama.cpp endpoint" }}",
       "api": "openai-completions",
