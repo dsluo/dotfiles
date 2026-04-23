@@ -1,4 +1,6 @@
-.pi/agent/sessions/**
+.pi/agent/sessions/
 .pi/**/node_modules/**
 .pi/agent/mcp-cache.json
-.pi/agent/private_auth.json
+.pi/agent/auth.json
+.pi/agent/mcp-oauth/
+.pi/agent/run-history.jsonl
