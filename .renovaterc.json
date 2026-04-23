@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update npm packages listed in pi agent settings.json",
+      "managerFilePatterns": [
+        "/dot_pi/agent/settings\\.json$/"
+      ],
+      "matchStrings": [
+        "\"npm:(?<depName>(?:@[^/\"]+/)?[^@\"]+)@(?<currentValue>[^\"]+)\""
+      ],
+      "datasourceTemplate": "npm",
+      "versioningTemplate": "npm"
+    }
+  ]
+}
