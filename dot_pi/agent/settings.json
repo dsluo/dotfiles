@@ -1,16 +1,14 @@
 {
   "enableSkillCommands": true,
-  "lastChangelogVersion": "0.69.0",
+  "lastChangelogVersion": "0.70.0",
   "defaultProvider": "llama.cpp",
   "defaultModel": "qwen/qwen3.6-35B-A3B:code",
   "enableInstallTelemetry": false,
-  "hideThinkingBlock": false,
+  "hideThinkingBlock": true,
   "packages": [
     "npm:pi-mcp-adapter@2.4.1",
-    "npm:@aliou/pi-guardrails@0.11.0",
     "npm:pi-ask-user@0.6.1",
     "npm:pi-subagents@0.17.2",
-    "npm:pi-tool-display@0.3.3",
     "npm:pi-docparser@1.1.1"
   ],
   "defaultThinkingLevel": "medium"
