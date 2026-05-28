@@ -9,7 +9,7 @@
     "npm:pi-mcp-adapter@2.5.4",
     "npm:pi-ask-user@0.9.0",
     "npm:pi-subagents@0.24.0",
-    "npm:pi-docparser@1.1.1"
+    "npm:pi-docparser@3.0.1"
   ],
   "defaultThinkingLevel": "medium"
 }
