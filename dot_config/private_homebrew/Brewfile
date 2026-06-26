@@ -1,0 +1,29 @@
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Voice and text chat software
+cask "discord"
+# Web browser
+cask "firefox"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
+# Add more gestures for Trackpad and Magic Mouse
+cask "multitouch"
+# Music streaming service
+cask "spotify"
+# Open-source code editor
+cask "visual-studio-code"
+# Distributed revision control system
+brew "git"
+# Handy way to save and run project-specific commands
+brew "just"
+# Discover, download, and run local LLMs
+cask "lm-studio"
