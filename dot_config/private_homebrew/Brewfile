@@ -35,4 +35,7 @@ brew "mas"
 mas "uBlock Origin Lite", id: 6745342698
 mas "1Password for Safari", id: 1569813296
 mas "Refined GitHub", id: 1519867270
+mas "Wireguard", id: 1451685025
 
+# Companion app for Home Assistant home automation software
+cask "home-assistant"
