@@ -3,6 +3,8 @@
 chezmoi = "latest"
 go = "latest"
 lazygit = "latest"
+"pipx:hf" = "latest"
 python = "latest"
 rust = "latest"
 usage = "latest"
+uv = "latest"
