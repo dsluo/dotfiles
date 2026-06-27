@@ -27,3 +27,5 @@ brew "git"
 brew "just"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud"
