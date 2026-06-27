@@ -29,3 +29,10 @@ brew "just"
 cask "lm-studio"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
+
+# Mac App Store command-line interface
+brew "mas"
+mas "uBlock Origin Lite", id: 6745342698
+mas "1Password for Safari", id: 1569813296
+mas "Refined GitHub", id: 1519867270
+
