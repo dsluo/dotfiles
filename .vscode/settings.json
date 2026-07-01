@@ -1,4 +1,7 @@
 {
+  "files.associations": {
+    "dot_gitconfig": "properties"
+  },
   "mise.configureExtensionsUseShims": false,
   "mise.configureExtensionsUseSymLinks": true,
   "mise.configureExtensionsIncludeGlobalTools": false
