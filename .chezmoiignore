@@ -5,3 +5,4 @@
 .pi/agent/mcp-oauth/
 .pi/agent/run-history.jsonl
 mise.toml
+justfile
