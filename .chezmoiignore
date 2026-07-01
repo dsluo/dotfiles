@@ -1,8 +1,3 @@
-.pi/agent/sessions/
-.pi/**/node_modules/**
-.pi/agent/mcp-cache.json
-.pi/agent/auth.json
-.pi/agent/mcp-oauth/
-.pi/agent/run-history.jsonl
 mise.toml
 justfile
+CLAUDE.md
