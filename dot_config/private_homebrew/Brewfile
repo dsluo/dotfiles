@@ -1,7 +1,4 @@
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+# System tools + GUI apps. Dev/project tools live in mise's config.toml.
 
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
@@ -21,14 +18,18 @@ cask "multitouch"
 cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
-# Distributed revision control system
-brew "git"
-# Handy way to save and run project-specific commands
-brew "just"
 # Discover, download, and run local LLMs
 cask "lm-studio"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
+# Companion app for Home Assistant home automation software
+cask "home-assistant"
+# Databases and SQL IDE
+cask "datagrip"
+# Video communication and virtual meeting platform
+cask "zoom"
+# Multimedia player
+cask "vlc"
 
 # Mac App Store command-line interface
 brew "mas"
@@ -36,6 +37,19 @@ mas "uBlock Origin Lite", id: 6745342698
 mas "1Password for Safari", id: 1569813296
 mas "Refined GitHub", id: 1519867270
 mas "Wireguard", id: 1451685025
+mas "SponsorBlock", id: 1573461917
 
-# Companion app for Home Assistant home automation software
-cask "home-assistant"
+# Distributed revision control system
+brew "git"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# 7-Zip is a file archiver with a high compression ratio
+brew "7zip"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
