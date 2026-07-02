@@ -16,3 +16,7 @@ pull:
 # Push changes from chezmoi to dotfiles
 push:
   chezmoi apply
+
+# chezmoi diff
+diff:
+  chezmoi diff
