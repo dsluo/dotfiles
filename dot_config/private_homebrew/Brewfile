@@ -30,6 +30,8 @@ cask "datagrip"
 cask "zoom"
 # Multimedia player
 cask "vlc"
+# REST, GraphQL and gRPC client
+cask "yaak"
 
 # Mac App Store command-line interface
 brew "mas"
