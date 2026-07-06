@@ -1,0 +1,6 @@
+term = xterm
+keybind = global:cmd+backquote=toggle_quick_terminal
+quick-terminal-position = center
+quick-terminal-size = 1000px,600px
+quick-terminal-animation-duration = 0
+keybind = shift+enter=text:\n
