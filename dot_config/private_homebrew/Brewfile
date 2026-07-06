@@ -20,6 +20,8 @@ cask "spotify"
 cask "visual-studio-code"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# G-code generator for 3D printers
+cask "orcaslicer"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
 # Companion app for Home Assistant home automation software
@@ -55,3 +57,5 @@ brew "btop"
 brew "git-delta"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Video game digital distribution service
+cask "steam"
