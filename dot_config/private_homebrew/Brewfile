@@ -51,6 +51,7 @@ mas "1Password for Safari", id: 1569813296
 mas "Refined GitHub", id: 1519867270
 mas "Wireguard", id: 1451685025
 mas "SponsorBlock", id: 1573461917
+mas "Signal Shifter", id: 6446061552
 
 # Distributed revision control system
 brew "git"
@@ -66,3 +67,5 @@ brew "btop"
 brew "git-delta"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Open-source software for live streaming and screen recording
+cask "obs"
