@@ -69,3 +69,5 @@ brew "git-delta"
 brew "chezmoi"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Software for Logitech devices
+cask "logi-options+"
