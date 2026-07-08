@@ -1,5 +1,10 @@
 # System tools + GUI apps. Dev/project tools live in mise's config.toml.
 
+# Personal tap for casks not distributable via homebrew proper (e.g. lprint)
+tap "dsluo/tap"
+# Label printer application
+cask "dsluo/tap/lprint"
+
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Anthropic's official Claude AI desktop app
