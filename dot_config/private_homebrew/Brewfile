@@ -43,6 +43,12 @@ cask "yaak"
 cask "steam"
 # Connect to Windows
 cask "windows-app"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Software for Logitech devices
+cask "logi-options+"
+# Screenshot measurement and annotation tool
+cask "shottr"
 
 # Mac App Store command-line interface
 brew "mas"
@@ -67,7 +73,3 @@ brew "btop"
 brew "git-delta"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
-# Open-source software for live streaming and screen recording
-cask "obs"
-# Software for Logitech devices
-cask "logi-options+"
