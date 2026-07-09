@@ -1,7 +1,7 @@
 # Dev/project tools. System tools + GUI apps live in the Brewfile.
 [tools]
 1password = "latest"
-azure = { version = "latest", uvx_args = "--prerelease=allow" }
+azure = { version = "latest", uvx_args = "--prerelease=allow", uvx = "false" }
 claude = "latest"
 github-cli = "latest"
 go = "latest"
@@ -9,6 +9,7 @@ jq = "latest"
 just = "latest"
 lazygit = "latest"
 node = "lts"
+pipx = "latest"
 "pipx:hf" = "latest"
 python = "latest"
 rust = "latest"
