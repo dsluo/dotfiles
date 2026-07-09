@@ -1,6 +1,7 @@
 [user]
     name = dsluo
     email = me@dsluo.dev
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM6sV4bgPcj3d1AhfdykNsGCvI/MpgSKywAZdGpUyI9K
 
 [includeIf "gitdir:~/Work/"]
     path = ~/Work/.gitconfig
@@ -20,3 +21,9 @@
 
 [merge]
     conflictStyle = zdiff3
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
