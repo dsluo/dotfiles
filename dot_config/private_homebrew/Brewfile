@@ -73,3 +73,7 @@ brew "btop"
 brew "git-delta"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
