@@ -1,3 +1,5 @@
+/opt/homebrew/bin/brew shellenv fish | source
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     alias vim nvim
