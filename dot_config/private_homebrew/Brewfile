@@ -77,3 +77,5 @@ brew "chezmoi"
 brew "imagemagick"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
