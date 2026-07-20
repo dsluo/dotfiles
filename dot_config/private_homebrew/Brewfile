@@ -45,10 +45,16 @@ cask "steam"
 cask "windows-app"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# Software for Logitech devices
-cask "logi-options+"
 # Screenshot measurement and annotation tool
 cask "shottr"
+# Minecraft launcher
+cask "prismlauncher"
+# Utility improving 3rd party mouse performance and functionalities
+cask "bettermouse"
+# Google Chromium, sans integration with Google
+cask "ungoogled-chromium"
+# Menu bar app for USB-C cable diagnostics
+cask "whatcable"
 
 # Mac App Store command-line interface
 brew "mas"
@@ -79,3 +85,13 @@ brew "imagemagick"
 brew "ghostscript"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# GNU compiler collection
+brew "gcc"
+# Object-file caching compiler wrapper
+brew "ccache"
+# Cross-platform make
+brew "cmake"
+# Interactive GPU process monitor
+brew "nvtop"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
