@@ -2,8 +2,8 @@
 
 # Personal tap for casks not distributable via homebrew proper (e.g. lprint)
 tap "dsluo/tap"
-# Label printer application
-cask "dsluo/tap/lprint"
+# whatcable tap
+tap "darrylmorley/whatcable"
 
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
@@ -55,6 +55,8 @@ cask "bettermouse"
 cask "ungoogled-chromium"
 # Menu bar app for USB-C cable diagnostics
 cask "whatcable"
+# Label printer application
+cask "dsluo/tap/lprint"
 
 # Mac App Store command-line interface
 brew "mas"
