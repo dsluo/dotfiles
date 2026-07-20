@@ -8,8 +8,12 @@ if status is-interactive
     alias tg terragrunt
     alias kubecolor kubectl
     alias k kubecolor
+    alias oc opencode
+    alias cc claude
 end
+
 $HOME/.local/bin/mise activate fish | source
+
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx EDITOR nvim
 
