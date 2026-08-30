@@ -5,6 +5,8 @@ tap "dsluo/tap"
 # Label printer application
 cask "dsluo/tap/lprint"
 
+# Safe, private runtime for autonomous AI agents
+brew "dsluo/tap/openshell", restart_service: :changed
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Anthropic's official Claude AI desktop app
@@ -23,8 +25,6 @@ cask "multitouch"
 cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
-# Discover, download, and run local LLMs
-cask "lm-studio"
 # G-code generator for 3D printers
 cask "orcaslicer"
 # Collection of apps and services for photography, design, video, web, and UX
@@ -55,6 +55,12 @@ cask "bettermouse"
 cask "ungoogled-chromium"
 # Menu bar app for USB-C cable diagnostics
 cask "whatcable"
+# Spreadsheet software
+cask "microsoft-excel"
+# Word processor
+cask "microsoft-word"
+# Graphical client for Git version control
+cask "sourcetree"
 
 # Mac App Store command-line interface
 brew "mas"
@@ -71,6 +77,8 @@ brew "git"
 brew "fish"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Terminal multiplexer
+brew "tmux"
 # 7-Zip is a file archiver with a high compression ratio
 brew "7zip"
 # Resource monitor. C++ version and continuation of bashtop and bpytop

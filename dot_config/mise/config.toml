@@ -4,6 +4,7 @@
 azure = { version = "latest", uvx_args = "--prerelease=allow", uvx = "false" }
 claude = "latest"
 codex = "latest"
+copilot = "latest"
 fd = "latest"
 github-cli = "latest"
 go = "latest"
@@ -20,3 +21,6 @@ python = "latest"
 rust = "latest"
 usage = "latest"
 uv = "latest"
+
+[settings.npm]
+shell_out = true

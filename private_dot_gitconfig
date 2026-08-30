@@ -11,6 +11,7 @@
 
 [core]
     pager = delta
+	excludesfile = /Users/dsluo/.gitignore_global
 
 [interactive]
     diffFilter = delta --color-only
@@ -27,3 +28,7 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+[diff]
+	tool = vimdiff
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
