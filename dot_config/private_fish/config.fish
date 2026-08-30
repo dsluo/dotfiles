@@ -10,6 +10,8 @@ if status is-interactive
     alias k kubecolor
     alias oc opencode
     alias cc claude
+
+    atuin init fish | source
 end
 
 $HOME/.local/bin/mise activate fish | source
