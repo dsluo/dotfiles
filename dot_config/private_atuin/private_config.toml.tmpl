@@ -34,7 +34,7 @@
 # update_channel = "stable"
 
 ## address of the sync server
-# sync_address = "https://api.atuin.sh"
+sync_address = "https://atuin.crayon.club"
 
 ## how often to sync history. note that this is only triggered when a command
 ## is ran, so sync intervals may well be longer
@@ -168,7 +168,7 @@
 ## whereas tab will put the command in the prompt for editing.
 ## If set to false, both enter and tab will place the command in the prompt for editing.
 ## This applies for new installs. Old installs will keep the old behaviour unless configured otherwise.
-enter_accept = true
+enter_accept = false
 search_mode = "daemon-fuzzy"
 
 ## Defaults to false. If enabled, when triggered after &&, || or |, Atuin will complete commands to chain rather than replace the current line.
@@ -362,6 +362,9 @@ autostart = true
 
 [ai]
 enabled = true
+endpoint = "https://atuin-ai.crayon.club"
+api_token = "{{ onepasswordRead "op://homelab/k8s-tools-atuin-ai-secret/AUTH_TOKEN" }}"
+model = "qwen3.8-27b"
 ## Columns to display in the interactive search, from left to right.
 ## The selection indicator (" > ") is always shown first implicitly.
 ##
