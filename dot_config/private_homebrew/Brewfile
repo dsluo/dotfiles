@@ -111,3 +111,5 @@ brew "ripgrep"
 brew "qemu"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
+# Replacement for Docker Desktop
+cask "orbstack"
