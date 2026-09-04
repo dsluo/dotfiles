@@ -11,6 +11,7 @@ update:
 
 # Pull changes from dotfiles to chezmoi
 pull:
+  git config --local include.path ../git-filters.conf
   chezmoi re-add
 
 # Push changes from chezmoi to dotfiles

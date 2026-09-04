@@ -1,0 +1,2 @@
+# Pi records its changelog state locally; do not version that volatile value.
+dot_pi/agent/settings.json filter=pi-settings
