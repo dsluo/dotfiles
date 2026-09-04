@@ -65,6 +65,10 @@ cask "microsoft-word"
 cask "sourcetree"
 # Administration tool for MikroTik RouterOS
 cask "winbox"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 
 # Mac App Store command-line interface
 brew "mas"
@@ -111,5 +115,3 @@ brew "ripgrep"
 brew "qemu"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
-# Replacement for Docker Desktop
-cask "orbstack"
