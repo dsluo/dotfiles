@@ -10,6 +10,7 @@ if status is-interactive
     alias k kubecolor
     alias oc opencode
     alias cc claude
+    alias os openshell
 
     atuin init fish | source
 end
