@@ -1,6 +1,7 @@
 mise.toml
 justfile
 CLAUDE.md
+AGENTS.md
 git-filters.conf
 
 # Ignore Pi's generated state; retain only the configuration in dot_pi.
