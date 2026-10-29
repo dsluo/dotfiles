@@ -42,6 +42,9 @@ To change global instructions or skills:
 - Never replace a symlink with a regular file or write a separate copy per tool.
 - To add a skill, create its directory under `dot_agents/skills/` and apply. Don't
   put new skills straight into `~/.claude/skills`.
+- Third-party skills published in a git repo aren't copied in: mise clones the repo
+  (`[bootstrap.repos]` in the mise config) and a `symlink_<name>` file links the skill
+  into `~/.agents/skills`. The repo's AGENTS.md has details.
 - The dotfiles repo is public. Anything naming my employer, coworkers, ADO orgs or
   internal infrastructure must be added with `chezmoi add --encrypt` (age, key in
   1Password). See the repo's CLAUDE.md for details.

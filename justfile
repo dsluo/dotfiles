@@ -8,6 +8,7 @@ update:
     mise bootstrap packages apply --manager brew-cask -y
     PATH="/opt/homebrew/bin:$PATH" mise bootstrap packages apply --manager mas -y
     mise bootstrap packages upgrade -y
+    mise bootstrap repos update
     mise upgrade -y
 
 # Pull changes from dotfiles to chezmoi

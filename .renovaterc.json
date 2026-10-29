@@ -3,7 +3,6 @@
   "extends": [
     "config:recommended"
   ],
-
   "customManagers": [
     {
       "customType": "regex",
@@ -16,6 +15,17 @@
       ],
       "datasourceTemplate": "npm",
       "versioningTemplate": "npm"
+    },
+    {
+      "customType": "regex",
+      "description": "Update git tags pinned in mise [bootstrap.repos]",
+      "managerFilePatterns": [
+        "/dot_config/mise/config\\.toml$/"
+      ],
+      "matchStrings": [
+        "url = \"https://github\\.com/(?<depName>[^/\"]+/[^/\"]+?)(?:\\.git)?\", ref = \"(?<currentValue>v[^\"]+)\""
+      ],
+      "datasourceTemplate": "github-tags"
     }
   ]
 }

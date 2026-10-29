@@ -152,3 +152,7 @@ shell_out = true
 "mas:1451685025" = "latest" # Wireguard
 "mas:1573461917" = "latest" # SponsorBlock
 "mas:6446061552" = "latest" # Signal Shifter
+
+# Third-party agent skills, cloned here and symlinked into ~/.agents/skills by chezmoi.
+[bootstrap.repos]
+"~/.local/share/agent-skills/gh-stack" = { url = "https://github.com/github/gh-stack.git", ref = "v0.3.0", depth = 1 }
