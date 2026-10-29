@@ -1,6 +1,5 @@
 mise.toml
 justfile
-CLAUDE.md
 AGENTS.md
 git-filters.conf
 

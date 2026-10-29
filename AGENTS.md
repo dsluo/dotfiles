@@ -83,4 +83,3 @@ configs via `includeIf`:
 - `mise.toml` (repo root) — pins tooling for *this repo's own* maintenance (node + `renovate`); ignored by chezmoi.
 - `.renovaterc.json` — Renovate config; keeps npm deps in pi agent settings up to date.
 - `.gitignore` — ignores `.DS_Store`.
-- `CLAUDE.md` — symlink to this file, for agents that only read `CLAUDE.md`.
