@@ -20,6 +20,7 @@ pipx = "latest"
 "pipx:ipython" = "latest"
 python = "latest"
 rust = "latest"
+"aqua:smol-machines/smolvm" = "latest"
 usage = "latest"
 uv = "latest"
 
@@ -71,6 +72,8 @@ shell_out = true
 "brew:switchaudio-osx" = "latest"
 # Modern Day Portscanner
 "brew:rustscan" = "latest"
+# Utilities for the ext2, ext3, and ext4 file systems (mkfs.ext4 for smolvm)
+"brew:e2fsprogs" = "latest"
 # Ruby 3+ lets mise read cask definitions from third-party taps
 "brew:ruby" = "latest"
 
