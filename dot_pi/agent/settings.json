@@ -6,10 +6,7 @@
   "showCacheMissNotices": true,
   "enableInstallTelemetry": false,
   "hideThinkingBlock": true,
-  "packages": [
-    "npm:pi-provider-litellm",
-    "npm:pi-mcp-adapter"
-  ],
+  "packages": [],
   "doubleEscapeAction": "tree",
   "tuiMode": "fullscreen",
   "fullscreenScrollbar": "auto",
