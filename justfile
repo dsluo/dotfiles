@@ -1,12 +1,11 @@
 _:
     @just --list
 
-# Update mise packages and unsupported Brewfile casks
+# Update mise bootstrap packages and tools
 update:
     mise self-update -y
     mise bootstrap packages apply --manager brew -y
     mise bootstrap packages apply --manager brew-cask -y
-    brew bundle -g
     PATH="/opt/homebrew/bin:$PATH" mise bootstrap packages apply --manager mas -y
     mise bootstrap packages upgrade -y
     mise upgrade -y

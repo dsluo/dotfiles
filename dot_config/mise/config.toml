@@ -71,6 +71,8 @@ shell_out = true
 "brew:switchaudio-osx" = "latest"
 # Modern Day Portscanner
 "brew:rustscan" = "latest"
+# Ruby 3+ lets mise read cask definitions from third-party taps
+"brew:ruby" = "latest"
 
 # Password manager that keeps all passwords secure behind one password
 "brew-cask:1password" = "latest"
@@ -136,6 +138,12 @@ shell_out = true
 "brew-cask:hermes-desktop" = "latest"
 # Time tracker
 "brew-cask:activitywatch" = "latest"
+# Menu bar app for USB-C cable diagnostics
+"brew-cask:darrylmorley/whatcable/whatcable" = "latest"
+# Stream Deck software with support for Elgato Stream Deck plugins
+"brew-cask:dsluo/tap/opendeck" = "latest"
+# Label printer application
+# "brew-cask:dsluo/tap/lprint" = "latest"
 
 # Mac App Store apps
 "mas:6745342698" = "latest" # uBlock Origin Lite
