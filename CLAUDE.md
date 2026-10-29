@@ -34,7 +34,7 @@ capture. Always run `chezmoi diff` before applying if unsure.
 
 - **mise** — `dot_config/mise/config.toml`: dev/project runtimes and CLIs (node, python, go, rust, uv, github-cli, claude, etc.), plus system formulae, casks, and Mac App Store apps in `[bootstrap.packages]`. mise is activated in `config.fish`.
 
-Use `mise bootstrap packages apply` to install missing system packages and `mise bootstrap packages upgrade` to update them. The Homebrew prefix remains `/opt/homebrew` on Apple Silicon, but mise manages formulae and most casks directly without the Homebrew executable. `dot_config/private_homebrew/Brewfile` retains `openshell`, `whatcable`, and `lprint`, whose taps do not publish the formula or cask API metadata mise requires.
+Use `mise bootstrap packages apply` to install missing system packages and `mise bootstrap packages upgrade` to update them. The Homebrew prefix remains `/opt/homebrew` on Apple Silicon, but mise manages formulae and most casks directly without the Homebrew executable. `dot_config/private_homebrew/Brewfile` retains `whatcable` and the `dsluo/tap` packages (`opendeck`, `lprint`, `openshell`), whose taps do not publish the formula or cask API metadata mise requires.
 
 ## Templating & secrets
 

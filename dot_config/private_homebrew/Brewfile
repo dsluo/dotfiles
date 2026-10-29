@@ -1,8 +1,12 @@
 # These taps do not publish the JSON metadata required by mise's brew managers.
 tap "darrylmorley/whatcable"
-tap "dsluo/tap"
+tap "dsluo/tap", trusted: true
 
 # Safe, private runtime for autonomous AI agents
-brew "dsluo/tap/openshell", restart_service: :changed
+# brew "dsluo/tap/openshell", restart_service: :changed
+# Menu bar app for USB-C cable diagnostics
 cask "whatcable"
-cask "dsluo/tap/lprint"
+# Label printer application
+# cask "dsluo/tap/lprint"
+# Stream Deck software with support for Elgato Stream Deck plugins
+cask "dsluo/tap/opendeck"

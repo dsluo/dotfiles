@@ -12,6 +12,7 @@ jq = "latest"
 just = "latest"
 lazygit = "latest"
 node = "lts"
+"npm:@earendil-works/gondolin" = "latest"
 "npm:@earendil-works/pi-coding-agent" = "latest"
 opencode = "latest"
 pipx = "latest"
@@ -64,6 +65,12 @@ shell_out = true
 "brew:qemu" = "latest"
 # Improved shell history for zsh, bash, fish and nushell
 "brew:atuin" = "latest"
+# Play, record, convert, and stream select audio and video codecs
+"brew:ffmpeg" = "latest"
+# Change macOS audio source from the command-line
+"brew:switchaudio-osx" = "latest"
+# Modern Day Portscanner
+"brew:rustscan" = "latest"
 
 # Password manager that keeps all passwords secure behind one password
 "brew-cask:1password" = "latest"
@@ -123,6 +130,12 @@ shell_out = true
 "brew-cask:orbstack" = "latest"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 "brew-cask:obsidian" = "latest"
+# Desktop application for Unsloth Studio
+"brew-cask:unsloth" = "latest"
+# Open-source desktop AI agent
+"brew-cask:hermes-desktop" = "latest"
+# Time tracker
+"brew-cask:activitywatch" = "latest"
 
 # Mac App Store apps
 "mas:6745342698" = "latest" # uBlock Origin Lite
