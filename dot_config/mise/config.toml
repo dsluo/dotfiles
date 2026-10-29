@@ -1,7 +1,7 @@
 # Dev/project tools. System tools and GUI apps use bootstrap packages below.
 [tools]
 1password = "latest"
-azure = { version = "latest", uvx_args = "--prerelease=allow", uvx = "false" }
+azure = "latest"
 claude = "latest"
 codex = "latest"
 copilot = "latest"
