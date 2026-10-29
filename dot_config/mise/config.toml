@@ -1,4 +1,4 @@
-# Dev/project tools. System tools + GUI apps live in the Brewfile.
+# Dev/project tools. System tools and GUI apps use bootstrap packages below.
 [tools]
 1password = "latest"
 azure = { version = "latest", uvx_args = "--prerelease=allow", uvx = "false" }
@@ -24,3 +24,110 @@ uv = "latest"
 
 [settings.npm]
 shell_out = true
+
+[bootstrap.packages]
+# Mac App Store command-line interface
+"brew:mas" = "latest"
+# Distributed revision control system
+"brew:git" = "latest"
+# User-friendly command-line shell for UNIX-like operating systems
+"brew:fish" = "latest"
+# Ambitious Vim-fork focused on extensibility and agility
+"brew:neovim" = "latest"
+# Terminal multiplexer
+"brew:tmux" = "latest"
+# 7-Zip is a file archiver with a high compression ratio
+"brew:sevenzip" = "latest"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+"brew:btop" = "latest"
+# Syntax-highlighting pager for git and diff output
+"brew:git-delta" = "latest"
+# Manage your dotfiles across multiple diverse machines, securely
+"brew:chezmoi" = "latest"
+# Tools and libraries to manipulate images in select formats
+"brew:imagemagick" = "latest"
+# Interpreter for PostScript and PDF
+"brew:ghostscript" = "latest"
+# Bourne-Again SHell, a UNIX command interpreter
+"brew:bash" = "latest"
+# GNU compiler collection
+"brew:gcc" = "latest"
+# Object-file caching compiler wrapper
+"brew:ccache" = "latest"
+# Cross-platform make
+"brew:cmake" = "latest"
+# Interactive GPU process monitor
+"brew:nvtop" = "latest"
+# Search tool like grep and The Silver Searcher
+"brew:ripgrep" = "latest"
+# Generic machine emulator and virtualizer
+"brew:qemu" = "latest"
+# Improved shell history for zsh, bash, fish and nushell
+"brew:atuin" = "latest"
+
+# Password manager that keeps all passwords secure behind one password
+"brew-cask:1password" = "latest"
+# Anthropic's official Claude AI desktop app
+"brew-cask:claude" = "latest"
+# Voice and text chat software
+"brew-cask:discord" = "latest"
+# Web browser
+"brew-cask:firefox" = "latest"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+"brew-cask:ghostty" = "latest"
+# Meet, chat, call, and collaborate in just one place
+"brew-cask:microsoft-teams" = "latest"
+# Add more gestures for Trackpad and Magic Mouse
+"brew-cask:multitouch" = "latest"
+# Music streaming service
+"brew-cask:spotify" = "latest"
+# Open-source code editor
+"brew-cask:visual-studio-code" = "latest"
+# G-code generator for 3D printers
+"brew-cask:orcaslicer" = "latest"
+# Collection of apps and services for photography, design, video, web, and UX
+"brew-cask:adobe-creative-cloud" = "latest"
+# Companion app for Home Assistant home automation software
+"brew-cask:home-assistant" = "latest"
+# Databases and SQL IDE
+"brew-cask:datagrip" = "latest"
+# Video communication and virtual meeting platform
+"brew-cask:zoom" = "latest"
+# Multimedia player
+"brew-cask:vlc" = "latest"
+# REST, GraphQL and gRPC client
+"brew-cask:yaak" = "latest"
+# Video game digital distribution service
+"brew-cask:steam" = "latest"
+# Connect to Windows
+"brew-cask:windows-app" = "latest"
+# Open-source software for live streaming and screen recording
+"brew-cask:obs" = "latest"
+# Screenshot measurement and annotation tool
+"brew-cask:shottr" = "latest"
+# Minecraft launcher
+"brew-cask:prismlauncher" = "latest"
+# Utility improving 3rd party mouse performance and functionalities
+"brew-cask:bettermouse" = "latest"
+# Google Chromium, sans integration with Google
+"brew-cask:ungoogled-chromium" = "latest"
+# Spreadsheet software
+"brew-cask:microsoft-excel" = "latest"
+# Word processor
+"brew-cask:microsoft-word" = "latest"
+# Graphical client for Git version control
+"brew-cask:sourcetree" = "latest"
+# Administration tool for MikroTik RouterOS
+"brew-cask:winbox" = "latest"
+# Replacement for Docker Desktop
+"brew-cask:orbstack" = "latest"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+"brew-cask:obsidian" = "latest"
+
+# Mac App Store apps
+"mas:6745342698" = "latest" # uBlock Origin Lite
+"mas:1569813296" = "latest" # 1Password for Safari
+"mas:1519867270" = "latest" # Refined GitHub
+"mas:1451685025" = "latest" # Wireguard
+"mas:1573461917" = "latest" # SponsorBlock
+"mas:6446061552" = "latest" # Signal Shifter

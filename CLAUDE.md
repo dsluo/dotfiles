@@ -25,17 +25,16 @@ adding files, follow these conventions rather than editing paths by hand — use
 
 - `just pull` → `chezmoi re-add` — pull edits made to **live** dotfiles back into this source repo
 - `just push` → `chezmoi apply` — push this source repo's state out to the live dotfiles
-- `just update` → upgrade everything: `brew bundle -g`, `brew upgrade`, `mise self-update`, `mise upgrade`, `mas update`
+- `just update` → install and upgrade bootstrap packages, update mise, then upgrade mise tools
 
 Typical loop: edit source files here → `just push` to apply, or edit live dotfiles → `just pull` to
 capture. Always run `chezmoi diff` before applying if unsure.
 
-## Package management (two systems, split by purpose)
+## Package management
 
-- **Homebrew** — `dot_config/private_homebrew/Brewfile`: system tools + GUI casks + Mac App Store (`mas`) apps. Installed via `brew bundle -g` (the `-g` global Brewfile is this file symlinked/rendered to `~/.config/homebrew/Brewfile`).
-- **mise** — `dot_config/mise/config.toml`: dev/project runtimes and CLIs (node, python, go, rust, uv, github-cli, claude, etc.). mise is activated in `config.fish`.
+- **mise** — `dot_config/mise/config.toml`: dev/project runtimes and CLIs (node, python, go, rust, uv, github-cli, claude, etc.), plus system formulae, casks, and Mac App Store apps in `[bootstrap.packages]`. mise is activated in `config.fish`.
 
-Keep the split intact: GUI/system → Brewfile; dev tooling → mise config.
+Use `mise bootstrap packages apply` to install missing system packages and `mise bootstrap packages upgrade` to update them. The Homebrew prefix remains `/opt/homebrew` on Apple Silicon, but mise manages formulae and most casks directly without the Homebrew executable. `dot_config/private_homebrew/Brewfile` retains `openshell`, `whatcable`, and `lprint`, whose taps do not publish the formula or cask API metadata mise requires.
 
 ## Templating & secrets
 
