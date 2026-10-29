@@ -1,0 +1,9 @@
+encryption = "age"
+useBuiltinAge = true
+
+[age]
+    identity = {{ joinPath .chezmoi.homeDir ".config/chezmoi/key.txt" | quote }}
+    recipient = "age1dz0j6wgc5fzrcuhqmulcwxctpk4nnjqnc844mugp0ymvafdzs40s2uk7s2"
+
+[diff]
+    pager = "delta"

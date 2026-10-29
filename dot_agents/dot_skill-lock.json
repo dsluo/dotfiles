@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "skills": {
+    "gh-stack": {
+      "source": "github/gh-stack",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/gh-stack.git",
+      "skillPath": "skills/gh-stack/SKILL.md",
+      "skillFolderHash": "1f58c48379bc9fcab68e8a37cb41aad3ad937419",
+      "installedAt": "2026-10-27T06:52:37Z",
+      "updatedAt": "2026-10-27T06:52:40Z"
+    }
+  }
+}

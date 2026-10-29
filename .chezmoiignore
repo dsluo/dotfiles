@@ -7,6 +7,7 @@ git-filters.conf
 .pi/agent/*
 !.pi/agent/settings.json
 !.pi/agent/mcp.json
+!.pi/agent/AGENTS.md
 !.pi/agent/extensions/
 !.pi/agent/extensions/litellm/
 !.pi/agent/extensions/litellm/**

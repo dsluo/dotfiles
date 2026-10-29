@@ -42,6 +42,33 @@ Templates use `.tmpl` and pull secrets from **1Password** via `onepasswordRead`,
 `Work/dot_gitconfig.tmpl` reads `op://chezmoi/git-work/...`. Applying templates requires the
 1Password CLI (`op`) to be signed in. Never hardcode secrets in source files — use a template.
 
+### Encrypted files
+
+Files with private or work-confidential content (this repo is public) are committed with chezmoi's
+built-in age encryption as `encrypted_*.age`. The age identity lives at `~/.config/chezmoi/key.txt`;
+on a new machine `run_once_before_00-age-key.sh` fetches it from `op://chezmoi/age-key/identity`.
+Add such files with `chezmoi add --encrypt <path>` and edit them with `chezmoi edit <path>` (or
+edit the live file and `just pull`). Never add plaintext that names the employer, coworkers, ADO
+orgs/IDs, or internal infrastructure.
+
+## Agent instructions and skills
+
+`~/.agents/` is the single source of truth for coding agents:
+
+- `dot_agents/AGENTS.md` holds the global instructions. `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`,
+  `~/.pi/agent/AGENTS.md` and `~/.config/opencode/AGENTS.md` are symlinks to it (`symlink_*` files).
+- `dot_agents/skills/<name>/` holds every skill. Codex and pi read `~/.agents/skills` directly;
+  `run_onchange_after_link-claude-skills.sh.tmpl` symlinks each one into `~/.claude/skills` and
+  prunes links to removed skills. To add a skill, add its directory here and `just push`.
+- Work skills (`ado-sync`, `log-work`, `sprint-plan`, `sprint-retro`) are encrypted.
+- `gh-stack` comes from `npx skills` (tracked in `dot_agents/dot_skill-lock.json`) and `use-yaak`
+  from `yaak agent install`; both are vendored, so re-run the installer then `just pull` to update.
+- `~/.claude/skills/synced/` belongs to claude.ai skill sync and is not managed here.
+- Claude Code's `settings.json` (plugins, marketplaces, auto-mode rules) and Codex's `config.toml`
+  (plugins, project trust) are encrypted because they describe work infrastructure.
+- MCP servers are only configured for pi (`dot_pi/agent/mcp.json`); Claude's come from claude.ai
+  connectors on the account.
+
 ## Git config layout
 
 `dot_gitconfig` sets global identity (`me@dsluo.dev`) and conditionally includes per-directory

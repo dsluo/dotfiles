@@ -1,0 +1,20 @@
+#!/bin/sh
+# Claude Code only reads ~/.claude/skills, so link each skill from ~/.agents/skills
+# (the shared copy Codex and pi read) into it, and prune links to removed skills.
+# skills: {{ range glob (joinPath .chezmoi.sourceDir "dot_agents/skills/*") }}{{ base . }} {{ end }}
+set -eu
+dst="$HOME/.claude/skills"
+mkdir -p "$dst"
+for dir in "$HOME"/.agents/skills/*/; do
+    name=$(basename "$dir")
+    if [ -e "$dst/$name" ] && [ ! -L "$dst/$name" ]; then
+        echo "skipping $dst/$name: not a symlink" >&2
+        continue
+    fi
+    ln -sfn "../../.agents/skills/$name" "$dst/$name"
+done
+for link in "$dst"/*; do
+    if [ -L "$link" ] && [ ! -e "$link" ]; then
+        rm "$link"
+    fi
+done
