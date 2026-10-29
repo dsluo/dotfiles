@@ -47,4 +47,4 @@ To change global instructions or skills:
   into `~/.agents/skills`. The repo's AGENTS.md has details.
 - The dotfiles repo is public. Anything naming my employer, coworkers, ADO orgs or
   internal infrastructure must be added with `chezmoi add --encrypt` (age, key in
-  1Password). See the repo's CLAUDE.md for details.
+  1Password). See the repo's AGENTS.md for details.
