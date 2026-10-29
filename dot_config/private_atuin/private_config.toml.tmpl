@@ -365,6 +365,9 @@ enabled = true
 endpoint = "https://atuin-ai.crayon.club"
 api_token = "{{ onepasswordRead "op://homelab/k8s-tools-atuin-ai-secret/AUTH_TOKEN" }}"
 model = "qwen3.8-27b"
+
+[ai.opening]
+send_last_command = true
 ## Columns to display in the interactive search, from left to right.
 ## The selection indicator (" > ") is always shown first implicitly.
 ##
