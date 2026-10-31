@@ -158,4 +158,5 @@ shell_out = true
 
 # Third-party agent skills, cloned here and symlinked into ~/.agents/skills by chezmoi.
 [bootstrap.repos]
+"~/.local/share/agent-skills/simple-english" = { url = "https://github.com/AminBlg/SimpleEnglish.git", ref = "v2.1.1", depth = 1 }
 "~/.local/share/agent-skills/gh-stack" = { url = "https://github.com/github/gh-stack.git", ref = "v0.3.0", depth = 1 }
