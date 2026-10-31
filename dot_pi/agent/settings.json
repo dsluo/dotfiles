@@ -1,7 +1,7 @@
 {
   "theme": "dark",
-  "defaultProvider": "litellm",
-  "defaultModel": "neuralwatt/deepseek-v4.1-flash",
+  "defaultProvider": "crayon.club",
+  "defaultModel": "llmkube/Qwen/Qwen3.8-Flash-Next",
   "defaultThinkingLevel": "high",
   "showCacheMissNotices": true,
   "enableInstallTelemetry": false,
