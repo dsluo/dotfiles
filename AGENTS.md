@@ -60,7 +60,7 @@ orgs/IDs, or internal infrastructure.
 - `dot_agents/skills/<name>/` holds every skill. Codex and pi read `~/.agents/skills` directly;
   `run_onchange_after_link-claude-skills.sh.tmpl` symlinks each one into `~/.claude/skills` and
   prunes links to removed skills. To add a skill, add its directory here and `just push`.
-- Work skills (`ado-sync`, `log-work`, `sprint-plan`, `sprint-retro`) are encrypted.
+- Work skills (`ado-sync`, `log-work`, `sprint-plan`, `sprint-retro`, `time-estimation`) are encrypted.
 - Third-party skills that live in a git repo are cloned by mise, not vendored: `[bootstrap.repos]`
   in `dot_config/mise/config.toml` clones them under `~/.local/share/agent-skills/`, pinned to a
   release tag (Renovate bumps it), and a `symlink_<name>` file in `dot_agents/skills/` points
